@@ -14,5 +14,5 @@ bg = BrachioGraph(inner_arm=8, outer_arm=9.5, bounds=[-14, 1, 10, 15])
 while True:
 	button_state = GPIO.input(23)
 	if button_state == False:
-		bg.draw_box()
+		bg.box()
 		time.sleep(4)
