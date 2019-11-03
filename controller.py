@@ -8,14 +8,11 @@ GPIO.setmode(GPIO.BCM)
 
 GPIO.setup(23, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
-try:
-	while True:
-		button_state = GPIO.input(23)
-		if button_state == False:
-			intitalize()
-			time.sleep(1)
-except:
-	GPIO.cleanup()
-
+while True:
+	button_state = GPIO.input(23)
+	if button_state == False:
+		intitalize()
+		time.sleep(1)
+        
 def initialize():
 	bg = BrachioGraph(inner_arm=8, outer_arm=9.5, bounds=[-14, 1, 10, 15])
