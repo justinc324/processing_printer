@@ -1,5 +1,5 @@
 from BrachioGraph.brachiograph import BrachioGraph
-#from linedraw import *
+from BrachioGraph.Pde2jsonInternal import create_json
 
 import RPi.GPIO as GPIO
 import time
@@ -14,5 +14,6 @@ bg = BrachioGraph(inner_arm=8, outer_arm=9.5, bounds=[-10, 3, 6, 12])
 while True:
 	button_state = GPIO.input(23)
 	if button_state == False:
-		bg.box()
+		create_json()
+		bg.plot_file("SaveDraw.jpg.json")
 		time.sleep(4)
