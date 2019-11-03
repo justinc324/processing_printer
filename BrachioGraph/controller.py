@@ -9,11 +9,13 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setup(23, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
 # initialize the BrachioGraph
-bg = BrachioGraph(inner_arm=8, outer_arm=9.5, bounds=[-10, 3, 6, 12])
+bg = BrachioGraph(inner_arm=8, outer_arm=9.5,
+				  bounds=[-10, 3, 6, 12],
+				  pw_up=1100, pw_down=900)
 
 while True:
 	button_state = GPIO.input(23)
 	if button_state == False:
-		#create_json()
-		bg.plot_file("SaveDraw.jpg.json")
+		create_json()
+		bg.plot_file("images/SaveDraw.jpg.json")
 		time.sleep(4)
