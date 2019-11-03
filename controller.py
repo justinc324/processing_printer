@@ -1,5 +1,5 @@
 from BrachioGraph.brachiograph import BrachioGraph
-from BrachioGraph.Pde2jsonInternal import create_json
+from BrachioGraph.Pde2jsonInternal import *
 
 import RPi.GPIO as GPIO
 import time
