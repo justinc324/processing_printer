@@ -22,6 +22,7 @@ try:
 	while True:
 		button_state = GPIO.input(23)
 		if button_state == False:
+			flag.ChangeDutyCycle(12.5)
 			create_json()
 			bg.plot_file("images/SaveDraw.jpg.json")
 			flag.ChangeDutyCycle(7.5)
