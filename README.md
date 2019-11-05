@@ -1,6 +1,6 @@
 # The Servo Scribbler
 
-Welcome! For module 4/5 of Creative Embedded Systems we were tasked with actuating the world by making creative interactive kinetic art while using motors. We (Justin Cong and Jordan Smith) decided to create a machine that takes and img file and prints it physically on paper using a writing utensil of choice. [Check out a timelapse of the Servo Scribbler creating it!](https://www.youtube.com/watch?v=3DlbCSYaHHQ&feature=youtu.be), or a l[onger video of the whole process](https://www.youtube.com/watch?v=EVQ3myf2Xe4&feature=youtu.be).
+Welcome! For module 4/5 of Creative Embedded Systems we were tasked with actuating the world by making creative interactive kinetic art while using motors. We (Justin Cong and Jordan Smith) decided to create a machine that takes and img file and prints it physically on paper using a writing utensil of choice. [Check out a timelapse of the Servo Scribbler creating it](https://www.youtube.com/watch?v=3DlbCSYaHHQ&feature=youtu.be), or a l[onger video of the whole process](https://www.youtube.com/watch?v=EVQ3myf2Xe4&feature=youtu.be).
 
 ![Here is an approximate hookup guide](IMG_3787.jpg) 
 
